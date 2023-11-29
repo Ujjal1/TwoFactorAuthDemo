@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   patch 'account_settings', to: 'account_settings#update'
 
   resource :otp, only: [:new, :create]
-  root 'welcome#index'
+  root 'registrations#new'
 end
